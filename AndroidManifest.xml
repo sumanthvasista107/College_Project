@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vmail"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="23" />
+   
+
+<uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+
+<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+<uses-permission android:name="android.permission.CAPTURE_AUDIO_HOTWORD"/>
+
+<uses-permission android:name="android.permission.INTERNET"/>
+
+<uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name=".FingerprintActivity"
+            android:label="@string/title_activity_fingerprint" >
+        </activity>
+        <activity
+            android:name=".UserHomeActivity"
+            android:label="@string/title_activity_user_home" >
+        </activity>
+        <activity
+            android:name=".SignUpActivity1"
+            android:label="@string/title_activity_sign_up_activity1" >
+        </activity>
+        <activity
+            android:name=".Conform"
+            android:label="@string/title_activity_conform" >
+        </activity>
+        <activity
+            android:name=".Recipient"
+            android:label="@string/title_activity_recipient" >
+        </activity>
+        <activity
+            android:name=".Subject"
+            android:label="@string/title_activity_subject" >
+        </activity>
+        <activity
+            android:name=".InputMessage"
+            android:label="@string/title_activity_input_message" >
+        </activity>
+        <activity
+            android:name=".SendConform"
+            android:label="@string/title_activity_send_conform" >
+        </activity>
+        <activity
+            android:name=".ReadMessages"
+            android:label="@string/title_activity_read_messages" >
+        </activity>
+    </application>
+
+</manifest>
